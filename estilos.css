@@ -1,3 +1,7 @@
+/*
+ * Fonts e icons
+ */
+
 /*@font-face {
     font-family: 'open_sansregular';
     src: url('fonts/OpenSans-Regular-webfont.eot');
@@ -54,6 +58,9 @@
 	margin-right: .4em;
 }
 
+/*
+ * Arbol
+ */
 a
 {
 	color: #22BCE0;/* Azul */
@@ -206,7 +213,7 @@ nav ul li a
 	background: white;
 	border-bottom: 3px solid #22BCE0;
 	margin-bottom: 3em;
-	min-height: 128px;
+	/* Desactivado para animaciones   min-height: 128px;   */
 	position: relative;
 }
 #contenido .item .autor_item
@@ -273,6 +280,10 @@ nav ul li a
 	float: right;
 }
 
+/*
+ * Media query
+ */
+
 @media screen and (min-width: 800px){
 	#contenido
 	{
@@ -302,4 +313,34 @@ nav ul li a
 	{
 		width: 100%;
 	}
+}
+
+/*
+ * Formularios
+ */
+
+.formulario
+{
+	text-align: right;
+	padding: 1em;
+	display: none;
+}
+.formulario input
+{
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="text"],
+.formulario input[type="url"]
+{
+	border: 1px solid #888;
+}
+.formulario input[type="submit"]
+{
+	background: #22BCE0;
+	border: 1px solid #22BCE0;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	color: white;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 }
